@@ -10,7 +10,7 @@ import Espaciado from './components/Espaciado'
 const App = () => {
   return (
     <>
-      <>
+      
       <Menu />
       <Header />
       <Seccion />
@@ -18,7 +18,7 @@ const App = () => {
       <Carrusel />
       <Espaciado />
       <Footer />
-    </>
+    
     </>
   )
 }

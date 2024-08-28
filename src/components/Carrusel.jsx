@@ -19,7 +19,7 @@ const Carrusel = () => {
   return (
     <>
     <div className="container-2 mt-5">
-   <SemiBg />
+   
       <div className="">
         <Swiper
           effect="coverflow"
