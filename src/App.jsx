@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Menu from './components/Menu'
 import Carrusel from './components/Carrusel'
 import Espaciado from './components/Espaciado'
+import FooterB from './components/FooterB'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Carrusel />
       <Espaciado />
       <Footer />
+      <FooterB />
     
     </>
   )

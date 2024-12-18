@@ -13,10 +13,11 @@
 
 h1{
   font-size: 3.2rem;
+  
 }
 
 ::-webkit-scrollbar {
-  width: 0rem;
+  width: 1rem;
 }
 
 body{
@@ -74,7 +75,7 @@ html {
 }
 
 header{
-  background-image: url("./assets/por-2.png");
+  background-image: url("./assets/res-1.png");
   background-repeat: no-repeat; /*no repite la imagen*/
   background-size: cover;
   color: white;
@@ -82,16 +83,28 @@ header{
   padding-bottom: 120px;
   padding-left: 0;
   padding-right: 0;
-       
+  text-align: center;       
 }
 
-@media all and (max-width: 768px){
+header h1 {
+  font-size: 4.5rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
   
-  header {      
-      padding-left: 40px;
-      padding-right: 40px;
+}
+
+.titulo-con-borde span {
+  color: #FFA500; 
+}
+
+@media all and (max-width: 768px) {
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  
+
+  header h1 {
+    font-size: 2rem; /* Tamaño ajustado para pantallas más pequeñas */
+  }
 }
 
 .hidden {
@@ -267,3 +280,19 @@ header{
   margin-right: 0;
 }
 
+
+.img-footer {
+  background-image: url("./assets/9.png");
+  background-color: #3d281b;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  margin: 0;
+  padding: 20px 0;
+  
+}
+
+.social-icono{
+  color: white;
+  
+  }

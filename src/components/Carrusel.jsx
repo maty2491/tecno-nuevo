@@ -45,7 +45,7 @@ const Carrusel = () => {
                 Lo que nos <span className="text-orange">diferencia</span>
               </h2>
               <img src={slide_image_1} className="slide-imagen" alt="Slide 1" />
-              <h3 className='slide-descripcion'>La gelificación es un desarrollo patentado de <span className='fw-bold'>TECNOSUSTRATO</span> </h3>
+              <h3 className='slide-descripcion'>La gelificación es un desarrollo patentado de <span className='text-orange fw-bold'>TECNOSUSTRATO</span> </h3>
             </div>
           </SwiperSlide>
 
