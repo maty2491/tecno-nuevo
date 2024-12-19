@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Menu from './components/Menu'
 import Carrusel from './components/Carrusel'
 import Espaciado from './components/Espaciado'
-import FooterB from './components/FooterB'
+import Parallax from './components/Parallax'
 
 
 const App = () => {
@@ -15,11 +15,12 @@ const App = () => {
       <Menu />
       <Header />
       <Seccion />
+      <Parallax />
       <Espaciado />
       <Carrusel />
       <Espaciado />
       <Footer />
-      <FooterB />
+      
     
     </>
   )

@@ -88,9 +88,11 @@ header{
 
 header h1 {
   font-size: 4.5rem; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);  
   
 }
+
+
 
 .titulo-con-borde span {
   color: #FFA500; 
@@ -296,3 +298,21 @@ header h1 {
   color: white;
   
   }
+
+  .parallax-section {
+    background-image: url('./assets/por-2.png'); /* Reemplaza con tu imagen */
+    min-height: 24vh;
+    background-attachment: fixed; /* Parallax básico */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ .parallax-section h1{
+   
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
+   }
