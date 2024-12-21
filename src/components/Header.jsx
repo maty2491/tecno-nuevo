@@ -12,7 +12,7 @@ const Header = () => {
     }, []);
     
     return (
-        <header className='img-fluid mx-auto d-block'>
+        <header className='img-fluid mx-auto d-block' id='inicio'>
             <div className='borde'>
                 <h1 className={`fw-bold ${visible ? 'animate__animated animate__fadeInUp' : 'hidden'}`}>
                     SOLUCIONES BIOTECNOLÓGICAS APLICADAS AL <span className='text-orange'>AGRO</span>

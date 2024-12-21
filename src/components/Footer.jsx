@@ -26,17 +26,17 @@ const Servicios = () => {
           <div className='col-lg-2 text-lg-start text-md-center text-center'>
             <h2 className="text-white fw-bold mb-4 mt-3">CONTACTO</h2>
             <p className="text-white">
-              <FontAwesomeIcon icon={faWhatsapp} className='me-2 fs-4' /> (03492) 15668089
+              <FontAwesomeIcon icon={faWhatsapp} className='me-1 fs-4' /> (03492) 15668089
             </p>
             <p className="text-white">
-              <FontAwesomeIcon icon={faWhatsapp} className='me-2 fs-4' /> (03492) 532197
+              <FontAwesomeIcon icon={faWhatsapp} className='me-1 fs-4' /> (03492) 532197
             </p>
             <p className="text-white">
-              <FontAwesomeIcon icon={faEnvelope} className='me-2 fs-4' /> info@tecnosustrato.com.ar
+              <FontAwesomeIcon icon={faEnvelope} className='me-1 fs-4' />info@tecnosustrato.com.ar
             </p>
             <p className='text-white'>
               <a href="https://forms.gle/DGhYTqEA6FbgbQbPA" className="text-white text-decoration-underline" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faBriefcase} className='me-2 fs-4' /> Trabajá con nosotros
+                <FontAwesomeIcon icon={faBriefcase} className='me-1 fs-4' /> Trabajá con nosotros
               </a>
             </p>
           </div>

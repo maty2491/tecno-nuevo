@@ -12,7 +12,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import slide_image_1 from '../assets/res-1.png';
 import slide_image_2 from '../assets/res-2.png';
 import slide_image_3 from '../assets/res-3.png';
-import slide_image_4 from '../assets/res-3.png'; // Cambié el nombre de la imagen para evitar duplicación
+
 
 
 const Carrusel = () => {
@@ -40,11 +40,11 @@ const Carrusel = () => {
           className="swiper_container"
         >
           <SwiperSlide>
-            <div className='slide-contenido'>
+            <div className='slide-contenido '>
               <h2 className='slide-titulo'>
                 Lo que nos <span className="text-orange">diferencia</span>
-              </h2>
-              <img src={slide_image_1} className="slide-imagen" alt="Slide 1" />
+              </h2>              
+              <img src={slide_image_1} className="slide-imagen " alt="Slide 1" />
               <h3 className='slide-descripcion'>La gelificación es un desarrollo patentado de <span className='text-orange fw-bold'>TECNOSUSTRATO</span> </h3>
             </div>
           </SwiperSlide>
@@ -54,7 +54,7 @@ const Carrusel = () => {
               <h2 className='slide-titulo'>
                 Nuestros <span className="text-orange">productos</span>
               </h2>
-              <img src={slide_image_2} className="slide-imagen" alt="Slide 2" />
+              <img src={slide_image_2} className="slide-imagen " alt="Slide 2" />
               <h3 className='slide-descripcion'>Nuestros bioinsumos <span className='text-orange fw-bold'>reactivan la vida</span> del suelo y evitan el <span className='fw-bold'>estrés de la planta</span>.</h3>
             </div>
           </SwiperSlide>
@@ -64,7 +64,7 @@ const Carrusel = () => {
               <h3 className='mb-5'>
                 Nuestros <span className="text-orange">servicios</span>
               </h3>
-              <img src={slide_image_3} className="slide-imagen" alt="Slide 3" />
+              <img src={slide_image_3} className="slide-imagen " alt="Slide 3" />
               <h3 className='slide-descripcion'>Detectamos problemas, <span className='text-orange fw-bold'>diseñamos soluciones a medida</span> y optimizamos <span className='fw-bold'>toda la cadena de valor</span>.</h3>
             </div>
           </SwiperSlide>

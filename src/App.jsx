@@ -1,29 +1,21 @@
-import './App.css'
-import Footer from './components/Footer'
-import Seccion from './components/Seccion'
-import Header from './components/Header'
-import Menu from './components/Menu'
-import Carrusel from './components/Carrusel'
-import Espaciado from './components/Espaciado'
-import Parallax from './components/Parallax'
-
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Menu from './components/Menu';
+import Inicio from './components/Inicio';
+import Productos from './components/Productos';
 
 const App = () => {
   return (
-    <>
-      
+    <Router>
       <Menu />
-      <Header />
-      <Seccion />
-      <Parallax />
-      <Espaciado />
-      <Carrusel />
-      <Espaciado />
-      <Footer />
-      
-    
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Inicio />} />       
+        <Route path="/productos/:id" element={<Productos />} />
+        {/* Ejemplo de ruta para página no encontrada */}
+        {/* <Route path="*" element={<PageNotFound />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

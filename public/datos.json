@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "HUMIC GEL",
+      "description": "Aplicación en suelo antes de la siembra.",
+      "image": "/p-1.png",
+      "fullDescription": "HUMIC GEL es un producto especializado para mejorar la estructura del suelo, ideal para aplicaciones antes de la siembra en cultivos extensivos e intensivos."
+    },
+    {
+      "id": 2,
+      "title": "H-K-I",
+      "description": "Aplicación en semillas.",
+      "image": "/p-2.png",
+      "fullDescription": "H-K-I ofrece un tratamiento efectivo para semillas, mejorando su germinación y resistencia inicial."
+    },
+    {
+      "id": 3,
+      "title": "Nutricional de Suelo en Gel",
+      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "image": "/p-3.png",
+      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+    },
+    {
+      "id": 4,
+      "title": "Nutricional de Suelo en Gel",
+      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "image": "/p-4.png",
+      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+    },
+    {
+      "id": 5,
+      "title": "Nutricional de Suelo en Gel",
+      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "image": "/p-5.png",
+      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+    },
+    {
+      "id": 6,
+      "title": "Kit de limpieza",
+      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "image": "/kit.png",
+      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+    }
+    
+  ]
