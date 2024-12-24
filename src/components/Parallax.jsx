@@ -6,11 +6,11 @@ const Parallax = () => {
     {/* Sección con efecto parallax */}
     <div className="parallax-section " id='productos'>
       <div className="container borde text-center text-white">
-        <h2 className="fw-bold">NUESTROS <span className='text-orange'>PRODUCTOS</span></h2>
+        <h1 className="fw-bold">NUESTROS <span className='text-orange'>PRODUCTOS</span></h1>
         <p className="lead"></p>
       </div>
     </div>
-    
+       
   </>
   )
 }

@@ -23,7 +23,7 @@ const SecProd = () => {
   };
 
   return (
-    <div className="container secprod-swiper mt-5">
+    <div className="container secprod-swiper mt-5" >
       <Swiper
         effect="coverflow"
         grabCursor={true}

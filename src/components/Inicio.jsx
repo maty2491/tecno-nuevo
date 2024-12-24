@@ -21,7 +21,8 @@ const Inicio = () => {
       <Espaciado />
       <Parallax />
       <SecProd />
-      <Productos />
+      {/* <Productos /> */}
+      <Espaciado />
       <FooterB /> 
     </>
   );

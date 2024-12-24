@@ -1,45 +1,111 @@
 [
     {
       "id": 1,
-      "title": "HUMIC GEL",
+      "title": "Humic-Gel",
       "description": "Aplicación en suelo antes de la siembra.",
       "image": "/p-1.png",
-      "fullDescription": "HUMIC GEL es un producto especializado para mejorar la estructura del suelo, ideal para aplicaciones antes de la siembra en cultivos extensivos e intensivos."
-    },
+      "fullDescription": [
+        "Carbono 100% disponible. Aporte de carbono de alta concentración y disponibilidad.",
+        "Potenciador de carga biológica. Amortigua el efecto por sales en el suelo. Aumenta la oxigenación y descompactación."
+      ],
+      "footer":{
+        "pointsDescription":[
+          "Aplicación de Carbono 100% disponible en el suelo.",
+          "Mejora la eficiencia del uso de nutrientes y agua.",
+          "Aumenta la actividad biológica en el suelo.",
+          "Mejora y potencia la estabilidad y la formación de agregados, dado que las moléculas húmicas estructuran minerales y arcillas."
+        ],
+        "otherPoints":[
+          "Favorece la formación de agregados, lo que garantiza la oxigenación, la infiltración y la actividad biológica.",
+          "Mejora la absorción y translocación de nutrientes del suelo a la raíz.",
+          "Genera procesos de aquelantamiento de moléculas salinas."
+        ]
+      }
+      },
     {
       "id": 2,
       "title": "H-K-I",
       "description": "Aplicación en semillas.",
       "image": "/p-2.png",
-      "fullDescription": "H-K-I ofrece un tratamiento efectivo para semillas, mejorando su germinación y resistencia inicial."
+      "fullDescription": [
+        "Apliación en semillas.",
+        "Bioprotector de semillas, potenciador de la rizosfera, reduce el estrés germinativo y mejora la nutrición.",
+        "Consorcios microorgánicos, ácidos húmicos y fúlvicos predigeridos de inmediata asimilación."
+      ],
+      "footer": {
+        "pointsDescription": [],
+        "otherPoints": []
+      }    
     },
     {
       "id": 3,
       "title": "Nutricional de Suelo en Gel",
       "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
       "image": "/p-3.png",
-      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
-    },
+      "fullDescription": [        
+        "Aumenta la translocación de nutrientes de suelo a raíz en el momento de mayor estrés por crecimiento de la planta.",
+        "Carbono 100% disponible, aminoácidos, macro y micro nutrientes."
+      ],
+      "footer":{
+        "pointsDescription": [
+          "Nutrición 100% disponible en el suelo.",
+          "Potencia la actividad biológica en el suelo con un desarrollo de carácter exponencial.",
+          "Incorpora y potencia la solubilización y distribución de nutrientes, poniéndolos a disponibilidad de la planta."
+        ],
+        "otherPoints": [
+          "Al ser 100% solubilizado en la aplicación, garantiza la dispersión, por lo que la formulación está inmediatamente disponible dentro de la activadad rizosférica.-"
+        ]
+      }
+     },
     {
       "id": 4,
-      "title": "Nutricional de Suelo en Gel",
-      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "title": "Nutri Gel Foliar",
+      "description": "Aplicación foliar previo al botón floral.",
       "image": "/p-4.png",
-      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+      "fullDescription": [
+        "Alta capacidad de nutrición foliar. Mejora la absorción de nutrientes por la permeabilización de las membranas de la planta.",
+        "Alto contenido de fulvatos, consorcios microogánicos endófitos y 21 aminoácidos disponibles."
+      ],
+      "footer": {
+        "pointsDescription": [
+          "Poderosa arma para la nutrición vegetal.",
+          "Las moléculas fúlvicas son altamente eficientes en el proceso de permeabilización de membranas biológicas, favoreciendo los procesos de intercambio planta suelo/planta atmósfera."
+        ],
+        "otherPoints": [
+          "Mejora la eficiencia respiratoria, garantizando la oxigenación vegetal.",
+          "Aumenta la actividad fotosintética.",
+          "Mejora y potencia la estabilidad de la translocación de nutrientes y favorece la capacidad de nutrición atmosférica."
+        ]
+      }
     },
     {
       "id": 5,
-      "title": "Nutricional de Suelo en Gel",
+      "title": "Nutri Gel Max - Antiestrés",
       "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
       "image": "/p-5.png",
-      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+      "fullDescription": [
+        "Aplicación foliar en casos de estrés.",
+        "Propiedades de dispersión y asimilación que potencian la respuesta vegetal para lograr salir de estados de estrés bióticos y abióticos.",
+        "Aminoácidos y fulvatos para bloquear los procesos de estrés en planta."
+      ],
+      "footer": {
+        "pointsDescription": [],
+        "otherPoints": []
+      }
     },
     {
       "id": 6,
       "title": "Kit de limpieza",
-      "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
+      "description": "Aplicación en máquina pulverizadora antes de incorporar los productos.",
       "image": "/kit.png",
-      "fullDescription": "Este gel nutricional está diseñado para proporcionar nutrientes clave al suelo en etapas críticas del desarrollo de las plantas."
+      "fullDescription": [
+        "Quelato de alta capacidad de arrastre. Por este motivo, toda la residualidad química queda con los principios activos.",
+        "Compuesto quelatante más un desincrustante biológico."
+      ],
+      "footer": {
+        "pointsDescription": [],
+        "otherPoints": []
+      }
     }
     
   ]
