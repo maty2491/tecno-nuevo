@@ -10,25 +10,33 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 const SecProd = () => {
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
   useEffect(() => {
     fetch("/datos.json")
       .then((response) => response.json())
-      .then((data) => setProducts(data))
+      .then((data) => {
+        // Si hay menos productos que las diapositivas necesarias, ajustamos slidesPerView
+        const requiredSlides = slidesPerView * 2;
+        if (data.length < requiredSlides) {
+          setSlidesPerView(Math.max(1, Math.floor(data.length / 2)));
+        }
+        setProducts(data);
+      })
       .catch((error) => console.error("Error al cargar los datos", error));
-  }, []);
+  }, [slidesPerView]);
 
   const handleViewProduct = (id) => {
     navigate(`/productos/${id}`);
   };
 
   return (
-    <div className="container secprod-swiper mt-5" >
+    <div className="container secprod-swiper mt-5">
       <Swiper
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
-        loop={true}
+        loop={products.length >= slidesPerView * 2} // Solo habilitar loop si hay suficientes productos
         spaceBetween={30}
         coverflowEffect={{
           rotate: 0,
@@ -39,6 +47,7 @@ const SecProd = () => {
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination]}
         className="swiper_container secprod-swiper"
+        slidesPerView={slidesPerView}
         breakpoints={{
           1024: {
             slidesPerView: 3,
@@ -47,7 +56,7 @@ const SecProd = () => {
             slidesPerView: 2,
           },
           0: {
-            slidesPerView: 2,
+            slidesPerView: slidesPerView, // Ajuste dinámico de acuerdo con el tamaño de la pantalla
           },
         }}
       >
@@ -82,5 +91,4 @@ const SecProd = () => {
 };
 
 export default SecProd;
-
 
