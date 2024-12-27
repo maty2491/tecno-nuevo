@@ -8,6 +8,8 @@ import Parallax from './Parallax';
 import Diferencias from './Diferencias';
 import SecProd from './SecProd';
 import Productos from './Productos';
+import ParallaxServ from './ParallaxServ';
+import SecServ from './SecServ';
 
 const Inicio = () => {
   return (
@@ -22,6 +24,9 @@ const Inicio = () => {
       <Parallax />
       <SecProd />
       {/* <Productos /> */}
+      <Espaciado />
+      <ParallaxServ/>
+      <SecServ/>
       <Espaciado />
       <FooterB /> 
     </>

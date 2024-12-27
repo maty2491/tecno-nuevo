@@ -1,4 +1,5 @@
-[
+{
+  "productos": [
     {
       "id": 1,
       "title": "Humic-Gel",
@@ -108,4 +109,54 @@
       }
     }
     
-  ]
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "title": "Gabinete Gis",
+      "description": "Diagnóstico y seguimiento del suelo y cultivo.",
+      "img1": "/18.png",
+      "img2": "/11.png",
+      "img3": "/7.png",
+      "otherDescription": {
+        "paragraph1": "En una alianza con EOS Data Analytics, nuestro servicio GIS (Sistema de Información Geográfica, por sus siglas en inglés) es una plataforma que permite el acceso y la gestión de datos geoespaciales.",
+        "paragraph2": "Utilizamos tecnología GIS para gestionar, analizar y visualizar datos que están relacionados con las condiciones de los suelos, sus bioambientes y los niveles de compactación. ",
+        "paragraph3": "También ofrecemos un servicio de seguimiento de cultivos durante el desarrollo de la campaña. Elaboramos reportes quincenales que nos permiten realizar el monitoreo permanente del estado del cultivo, mediante el análisis de variables basados en Índices de Vegetación en sus diferentes parámetros."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Laboratorio cualitativo",
+      "description": "Análisis físico, químico y biológico, del suelo y las plantas.",
+      "img1": "/4.png",
+      "img2": "/4.png",
+      "otherDescription": {
+        "paragraph1": "Nuestros expertos están disponibles para brindarte asesoramiento personalizado en cada etapa del ciclo de cultivo.",
+        "paragraph2": "Te ayudamos a implementar las mejores prácticas para mejorar la sostenibilidad y rentabilidad de tu actividad agrícola."
+      }
+    },
+    {
+      "id": 3,
+      "title": "Smart Soil",
+      "description": "Sensor de precisión en tiempo real.",
+      "img1": "/5.png",
+      "img2": "/5.png",
+      "otherDescription": {
+        "paragraph1": "Nuestros expertos están disponibles para brindarte asesoramiento personalizado en cada etapa del ciclo de cultivo.",
+        "paragraph2": "Te ayudamos a implementar las mejores prácticas para mejorar la sostenibilidad y rentabilidad de tu actividad agrícola."
+      }
+    },
+    {
+      "id": 4,
+      "title": "Sistematización de suelos",
+      "description": "Curvas de Nivel en tiempo real.",
+      "img1": "/6.png",
+      "img2": "/6.png",
+      "otherDescription": {
+        "paragraph1": "Nuestros expertos están disponibles para brindarte asesoramiento personalizado en cada etapa del ciclo de cultivo.",
+        "paragraph2": "Te ayudamos a implementar las mejores prácticas para mejorar la sostenibilidad y rentabilidad de tu actividad agrícola."
+      }
+    }
+  ] 
+
+  } 

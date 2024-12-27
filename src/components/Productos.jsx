@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import bannerImage from '../assets/res-1.png';
+import bannerImage from '../assets/3.png';
 import Espaciado from "../components/Espaciado"
 import "../styles/Productos.css";
 
@@ -18,7 +18,7 @@ const Productos = () => {
         return response.json();
       })
       .then((data) => {
-        const foundProduct = data.find((p) => p.id === parseInt(id));
+        const foundProduct = data.productos.find((p) => p.id === parseInt(id));
         if (foundProduct) {
           setProduct(foundProduct);
         } else {

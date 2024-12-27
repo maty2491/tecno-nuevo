@@ -1,0 +1,23 @@
+.parServ-section {
+    background-image: url("../assets/18.png"); /* Reemplaza con tu imagen */
+    min-height: 24vh;
+    background-attachment: fixed; /* Parallax básico */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  .parServ-section h2 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  @media all and (max-width: 768px) {
+    .parServ-section h2 {
+      font-size: 2rem;
+    }
+  }

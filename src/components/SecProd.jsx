@@ -15,17 +15,16 @@ const SecProd = () => {
   useEffect(() => {
     fetch("/datos.json")
       .then((response) => response.json())
-      .then((data) => {
-        // Si hay menos productos que las diapositivas necesarias, ajustamos slidesPerView
+      .then((data) => {         
+        const productos = data.productos || [];        
         const requiredSlides = slidesPerView * 2;
-        if (data.length < requiredSlides) {
-          setSlidesPerView(Math.max(1, Math.floor(data.length / 2)));
+        if (productos.length < requiredSlides) {
+          setSlidesPerView(Math.max(1, Math.floor(productos.length / 2)));
         }
-        setProducts(data);
+        setProducts(productos);
       })
       .catch((error) => console.error("Error al cargar los datos", error));
   }, [slidesPerView]);
-
   const handleViewProduct = (id) => {
     navigate(`/productos/${id}`);
   };
@@ -56,7 +55,7 @@ const SecProd = () => {
             slidesPerView: 2,
           },
           0: {
-            slidesPerView: slidesPerView, // Ajuste dinámico de acuerdo con el tamaño de la pantalla
+            slidesPerView: 2, // Ajuste dinámico de acuerdo con el tamaño de la pantalla
           },
         }}
       >
@@ -91,4 +90,5 @@ const SecProd = () => {
 };
 
 export default SecProd;
+
 

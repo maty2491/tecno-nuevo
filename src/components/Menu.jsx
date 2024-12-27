@@ -14,40 +14,10 @@ const Menu = () => {
     setIsOpen(false);
   };
 
-  // Función para manejar el desplazamiento suave hacia el inicio
-  const handleInicioClick = () => {
-    window.location.href = '/#inicio'; // Esto lleva al inicio y hace scroll hacia la sección de inicio
-    setActiveSection('inicio');
-    handleClose();
-  };
-
-  const handleProductosClick = () => {
-    window.location.href = '/#productos'; // Esto navega a la página de inicio y hace scroll hacia la sección de productos
-    setActiveSection('productos');
-    handleClose();
-  };
-
-  const handleServiciosClick = () => {
-    window.location.href = '/#servicios'; // Esto navega a la página de inicio y hace scroll hacia la sección de servicios
-    setActiveSection('servicios');
-    handleClose();
-  };
-
-  const handleNosotrosClick = () => {
-    window.location.href = '/#nosotros'; // Esto navega a la página de inicio y hace scroll hacia la sección de nosotros
-    setActiveSection('nosotros');
-    handleClose();
-  };
-
-  const handleEnsayosClick = () => {
-    window.location.href = '/#ensayos'; // Esto navega a la página de inicio y hace scroll hacia la sección de ensayos
-    setActiveSection('ensayos');
-    handleClose();
-  };
-
-  const handleContactoClick = () => {
-    window.location.href = '/#contacto'; // Esto navega a la página de inicio y hace scroll hacia la sección de contacto
-    setActiveSection('contacto');
+  // Función genérica para manejar el desplazamiento suave hacia una sección
+  const handleSectionClick = (section) => {
+    window.location.href = `/#${section}`; // Navega al inicio y hace scroll hacia la sección
+    setActiveSection(section);
     handleClose();
   };
 
@@ -90,7 +60,7 @@ const Menu = () => {
             {/* Inicio */}
             <span
               className={`nav-link ${activeSection === 'inicio' ? 'active' : ''}`}
-              onClick={handleInicioClick}
+              onClick={() => handleSectionClick('inicio')}
               style={{ cursor: 'pointer' }}
             >
               Inicio
@@ -99,7 +69,7 @@ const Menu = () => {
             {/* Productos */}
             <span
               className={`nav-link ${activeSection === 'productos' ? 'active' : ''}`}
-              onClick={handleProductosClick}
+              onClick={() => handleSectionClick('productos')}
               style={{ cursor: 'pointer' }}
             >
               Productos
@@ -108,7 +78,7 @@ const Menu = () => {
             {/* Servicios */}
             <span
               className={`nav-link ${activeSection === 'servicios' ? 'active' : ''}`}
-              onClick={handleServiciosClick}
+              onClick={() => handleSectionClick('servicios')}
               style={{ cursor: 'pointer' }}
             >
               Servicios
@@ -117,7 +87,7 @@ const Menu = () => {
             {/* Nosotros */}
             <span
               className={`nav-link ${activeSection === 'nosotros' ? 'active' : ''}`}
-              onClick={handleNosotrosClick}
+              onClick={() => handleSectionClick('nosotros')}
               style={{ cursor: 'pointer' }}
             >
               Nosotros
@@ -126,7 +96,7 @@ const Menu = () => {
             {/* Ensayos */}
             <span
               className={`nav-link ${activeSection === 'ensayos' ? 'active' : ''}`}
-              onClick={handleEnsayosClick}
+              onClick={() => handleSectionClick('ensayos')}
               style={{ cursor: 'pointer' }}
             >
               Ensayos
@@ -135,7 +105,7 @@ const Menu = () => {
             {/* Contacto */}
             <span
               className={`nav-link ${activeSection === 'contacto' ? 'active' : ''}`}
-              onClick={handleContactoClick}
+              onClick={() => handleSectionClick('contacto')}
               style={{ cursor: 'pointer' }}
             >
               Contacto
@@ -148,6 +118,7 @@ const Menu = () => {
 };
 
 export default Menu;
+
 
 
 
