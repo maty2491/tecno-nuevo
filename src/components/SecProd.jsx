@@ -64,7 +64,7 @@ const SecProd = () => {
             <div className="card secprod-card shadow-lg rounded-4 mt-5 mb-5">
               <div className="card-img-wrapper">
                 <img
-                  src={product.image}
+                  src={product.image2}
                   className="secprod-card-img-top rounded-top img-fluid"
                   alt={`Imagen de ${product.title}`}
                   style={{ objectFit: "cover", height: "250px" }}

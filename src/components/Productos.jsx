@@ -49,48 +49,45 @@ const Productos = () => {
 
       {/* Contenedor principal */}
       <div className="container mt-5">
-        {/* Título del producto */}
+
         <h1 className="text-center fw-bold">{product.title}</h1>
 
-        <div className="row align-items-center">
-          {/* Columna para la descripción completa */}
-
-          <div className="col-lg-6">
+        <div className="row">
+          
+          <div className="col-lg-4 mt-5 text-start">
             <div className="full-description mt-5">
               {product.fullDescription.map((desc, index) => (
-                <h5 key={index}>{desc}</h5>
+                <h2 key={index}>{desc}</h2>
               ))}
             </div>
           </div>
-
-          {/* Columna para la imagen del producto */}
-          <div className="col-lg-6">
+          <div className="col-lg-8">
             <img
               src={product.image}
               alt={`Imagen de ${product.title}`}
-              className="img-fluid rounded"
+              className="img-fluid d-block mx-auto"
               style={{ objectFit: "contain" }}
             />
           </div>
         </div>
 
-
         {/* Footer con puntos */}
         <div className="row mt-5">
-          <div className="col-lg-6">
-            <h5>
+          <div className="col-lg-6">           
               {product.footer.pointsDescription.map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </h5>
+                <ul>
+                  <li key={index}>{point}</li>
+                </ul>
+              ))}            
           </div>
 
-          <div className="col-lg-6">
-            <h5>
+          <div className="col-lg-6">           
               {product.footer.otherPoints.map((point, index) => (
-                <li key={index}>{point}</li>
+                <ul>
+                  <li key={index}>{point}</li>
+                </ul>
               ))}
-            </h5>
+            
           </div>
         </div>
         <div className='text-center mt-4'>

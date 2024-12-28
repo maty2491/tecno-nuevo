@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../styles/SecServ.css'
+import '../styles/SecServ.css';
 
 const SecServ = () => {
   const [servicios, setServicios] = useState([]);
@@ -21,14 +21,28 @@ const SecServ = () => {
   }, []);
 
   const handleButtonClick = (id) => {
-    navigate(`/servicios/${id}`); // Navegar a la URL con el id del servicio
+    switch (id) {
+      case 1:
+        navigate("/servicios/gabinete");
+        break;
+      case 2:
+        navigate("/servicios/laboratorio");
+        break;
+      case 3:
+        navigate("/servicios/smart");
+        break;
+      case 4:
+        navigate("/servicios/suelo");
+        break;
+      default:
+        navigate("/");
+    }
   };
 
   return (
     <>
-      <div className="container">
+      <div className="container" >
         <div className="row mb-5 mt-5">
-          {/* Tarjetas con botón "+" */}
           {servicios.length > 0 ? (
             servicios.map((card) => (
               <div className="col-lg-3 col-md-6 col-sm-12 mb-5" key={card.id}>

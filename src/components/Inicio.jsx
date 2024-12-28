@@ -7,13 +7,13 @@ import Espaciado from './Espaciado';
 import Parallax from './Parallax';
 import Diferencias from './Diferencias';
 import SecProd from './SecProd';
-import Productos from './Productos';
 import ParallaxServ from './ParallaxServ';
 import SecServ from './SecServ';
 
+
 const Inicio = () => {
   return (
-    <>    
+    <>        
       <Header />
       <Seccion />
       <Espaciado />

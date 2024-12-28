@@ -1,0 +1,104 @@
+/* CSS GABINETE */
+
+.fondo-servgab {
+  background-image: url("../assets/gabinete.png"); /* Asegúrate de que la ruta sea correcta */
+  background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 50%; /* Ajusta la altura al tamaño de la ventana */
+}
+
+.margin-b {
+  margin-bottom: 150px;
+}
+
+ul {
+  list-style: none; /* Elimina las viñetas predeterminadas */
+  padding-left: 20px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 35px;
+}
+
+/* Viñeta personalizada usando una imagen */
+ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/20.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  ul li::before {
+    width: 20px; /* Viñeta más pequeña */
+    height: 15px;
+    left: 8px;
+    top: 9px;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  ul li::before {
+    width: 20px; /* Viñeta aún más pequeña */
+    height: 12px;
+    left: 10px;
+    top: 8px;
+  }
+}
+
+/* Ajuste para pantallas grandes (como las de escritorio) */
+@media (min-width: 992px) {
+  ul li::before {
+    width: 45px; /* Viñeta más grande para pantallas grandes */
+    height: 35px;
+    left: -8px;
+    top: 4px;
+  }
+}
+
+/* CSS LABORATORIO */
+.fondo-servlab {
+    background-image: url("../assets/lab.png"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 50%; /* Ajusta la altura al tamaño de la ventana */
+  }
+  
+  .text-box {
+    max-width: 900px; /* Controla el ancho del texto */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: left; /* Alinea el texto internamente */
+}
+
+/* CSS SMART SOIL */
+
+.fondo-servsmart {
+    background-image: url("../assets/onda.png"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 50%; /* Ajusta la altura al tamaño de la ventana */
+  }
+
+  .fondo-b{
+    background-color: #0b7240;
+    border-radius: 50px; /* Hace el borde más redondeado */
+    padding: 10px 70px; /* Ajusta el tamaño del botón */
+    color: white; /* Cambia el color del texto */    
+    transition: all 0.3s ease; /* Efecto suave en los cambios */
+  }
+
+  /* CSS SISTEMATIZACION SUELO */
+
+  .fondo-sistema {
+    background-image: url("../assets/suelo.png"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 50%; /* Ajusta la altura al tamaño de la ventana */
+  }

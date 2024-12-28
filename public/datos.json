@@ -4,7 +4,8 @@
       "id": 1,
       "title": "Humic-Gel",
       "description": "Aplicación en suelo antes de la siembra.",
-      "image": "/p-1.png",
+      "image": "/humic.png",
+      "image2": "/p-1.png",
       "fullDescription": [
         "Carbono 100% disponible. Aporte de carbono de alta concentración y disponibilidad.",
         "Potenciador de carga biológica. Amortigua el efecto por sales en el suelo. Aumenta la oxigenación y descompactación."
@@ -27,9 +28,9 @@
       "id": 2,
       "title": "H-K-I",
       "description": "Aplicación en semillas.",
-      "image": "/p-2.png",
-      "fullDescription": [
-        "Apliación en semillas.",
+      "image": "/hki.png",
+      "image2":"/p-2.png",
+      "fullDescription": [        
         "Bioprotector de semillas, potenciador de la rizosfera, reduce el estrés germinativo y mejora la nutrición.",
         "Consorcios microorgánicos, ácidos húmicos y fúlvicos predigeridos de inmediata asimilación."
       ],
@@ -42,7 +43,8 @@
       "id": 3,
       "title": "Nutricional de Suelo en Gel",
       "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
-      "image": "/p-3.png",
+      "image": "/nutrisuelo.png",
+      "image2":"/p-3.png",
       "fullDescription": [        
         "Aumenta la translocación de nutrientes de suelo a raíz en el momento de mayor estrés por crecimiento de la planta.",
         "Carbono 100% disponible, aminoácidos, macro y micro nutrientes."
@@ -62,7 +64,8 @@
       "id": 4,
       "title": "Nutri Gel Foliar",
       "description": "Aplicación foliar previo al botón floral.",
-      "image": "/p-4.png",
+      "image": "/nutrfoliar.png",
+      "image2":"/p-4.png",
       "fullDescription": [
         "Alta capacidad de nutrición foliar. Mejora la absorción de nutrientes por la permeabilización de las membranas de la planta.",
         "Alto contenido de fulvatos, consorcios microogánicos endófitos y 21 aminoácidos disponibles."
@@ -83,7 +86,8 @@
       "id": 5,
       "title": "Nutri Gel Max - Antiestrés",
       "description": "Aplicación en suelo cuando la planta tiene la 5° hoja verdadera.",
-      "image": "/p-5.png",
+      "image": "/nutriestres.png",
+      "image2":"/p-5.png",
       "fullDescription": [
         "Aplicación foliar en casos de estrés.",
         "Propiedades de dispersión y asimilación que potencian la respuesta vegetal para lograr salir de estados de estrés bióticos y abióticos.",
@@ -98,8 +102,10 @@
       "id": 6,
       "title": "Kit de limpieza",
       "description": "Aplicación en máquina pulverizadora antes de incorporar los productos.",
-      "image": "/kit.png",
+      "image": "/kit.png", 
+      "image2":"/kit.png",     
       "fullDescription": [
+        "Aplicación en máquina pulverizadora antes de incorporar los productos.",
         "Quelato de alta capacidad de arrastre. Por este motivo, toda la residualidad química queda con los principios activos.",
         "Compuesto quelatante más un desincrustante biológico."
       ],

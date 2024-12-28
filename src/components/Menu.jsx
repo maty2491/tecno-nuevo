@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo-texto.png';
 import '../styles/Menu.css';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -14,24 +16,22 @@ const Menu = () => {
     setIsOpen(false);
   };
 
-  // Función genérica para manejar el desplazamiento suave hacia una sección
+  // Función para manejar la navegación y desplazamiento suave
   const handleSectionClick = (section) => {
-    window.location.href = `/#${section}`; // Navega al inicio y hace scroll hacia la sección
+    navigate('/');  // Navegar a la página de inicio sin recargar
     setActiveSection(section);
+    // Después de la navegación, desplazarse suavemente a la sección con offset
+    setTimeout(() => {
+      const target = document.querySelector(`#${section}`);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 100,  // Ajuste de desplazamiento (100px arriba de la sección)
+          behavior: 'smooth',
+        });
+      }
+    }, 100); // Pequeño retraso para asegurar que la navegación se complete antes del desplazamiento
     handleClose();
   };
-
-  // Desplazamiento manual hacia la sección cuando la URL cambia
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [window.location.hash]);
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div className="container-fluid">
@@ -57,7 +57,6 @@ const Menu = () => {
         </button>
         <div className={`collapse navbar-collapse justify-content-end ${isOpen ? 'show' : ''}`}>
           <div className="navbar-nav text-center fs-4">
-            {/* Inicio */}
             <span
               className={`nav-link ${activeSection === 'inicio' ? 'active' : ''}`}
               onClick={() => handleSectionClick('inicio')}
@@ -65,8 +64,6 @@ const Menu = () => {
             >
               Inicio
             </span>
-
-            {/* Productos */}
             <span
               className={`nav-link ${activeSection === 'productos' ? 'active' : ''}`}
               onClick={() => handleSectionClick('productos')}
@@ -74,8 +71,6 @@ const Menu = () => {
             >
               Productos
             </span>
-
-            {/* Servicios */}
             <span
               className={`nav-link ${activeSection === 'servicios' ? 'active' : ''}`}
               onClick={() => handleSectionClick('servicios')}
@@ -83,8 +78,6 @@ const Menu = () => {
             >
               Servicios
             </span>
-
-            {/* Nosotros */}
             <span
               className={`nav-link ${activeSection === 'nosotros' ? 'active' : ''}`}
               onClick={() => handleSectionClick('nosotros')}
@@ -92,8 +85,6 @@ const Menu = () => {
             >
               Nosotros
             </span>
-
-            {/* Ensayos */}
             <span
               className={`nav-link ${activeSection === 'ensayos' ? 'active' : ''}`}
               onClick={() => handleSectionClick('ensayos')}
@@ -101,8 +92,6 @@ const Menu = () => {
             >
               Ensayos
             </span>
-
-            {/* Contacto */}
             <span
               className={`nav-link ${activeSection === 'contacto' ? 'active' : ''}`}
               onClick={() => handleSectionClick('contacto')}
@@ -118,12 +107,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-
-
-
-
-
-
-

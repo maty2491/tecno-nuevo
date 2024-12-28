@@ -35,3 +35,43 @@
   margin-bottom: 8px; /* Espaciado entre los ítems */
 }
 
+
+
+/* Viñeta personalizada usando una imagen */
+ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/20.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  ul li::before {
+    width: 20px; /* Viñeta más pequeña */
+    height: 15px;
+    left: 8px;
+    top: 9px;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  ul li::before {
+    width: 20px; /* Viñeta aún más pequeña */
+    height: 12px;
+    left: 10px;
+    top: 8px;
+  }
+}
+
+/* Ajuste para pantallas grandes (como las de escritorio) */
+@media (min-width: 992px) {
+  ul li::before {
+    width: 45px; /* Viñeta más grande para pantallas grandes */
+    height: 35px;
+    left: -8px;
+    top: 4px;
+  }
+}
+
